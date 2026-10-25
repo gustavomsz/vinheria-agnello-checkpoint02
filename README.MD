@@ -24,8 +24,8 @@ vinharia-agnello/
     │   ├── banner.png
     │   └── Vinnho1.png
     └── js/
-       ├── script.js
-       └── cadastroDePessoas.js
+    │   ├── script.js
+    │   └── cadastroDePessoas.js
     └── pages/
         ├── historia.html
         ├── produtos.html
