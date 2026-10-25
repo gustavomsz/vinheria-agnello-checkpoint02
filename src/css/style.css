@@ -1,11 +1,10 @@
-/* ========== RESET: tira margens padrão e faz o padding não aumentar o tamanho das caixas ========== */
 *,
 *::before,
 *::after {
     box-sizing: border-box;
 }
 
-/* ========== BASE: fundo, fonte e cor do texto do site inteiro ========== */
+/* BASE */
 html,
 body {
     margin: 0;
@@ -23,13 +22,13 @@ body {
     color: #231519;
 }
 
-/* ========== IMAGENS: nunca passam da largura de quem as contém ========== */
+/* IMAGENS */
 img {
     max-width: 100%;
     display: block;
 }
 
-/* ========== TÍTULOS E TEXTOS ========== */
+/* TÍTULOS E TEXTOS */
 h1,
 h2,
 h3 {
@@ -60,26 +59,23 @@ a {
     color: #6B1E33;
 }
 
-/* ========== ACESSIBILIDADE: contorno dourado ao navegar pelo teclado (Tab) ========== */
 :focus-visible {
     outline: 2px solid #C9A227;
     outline-offset: 3px;
 }
 
 
-/* ========== CONTAINER: centraliza o conteúdo das páginas ========== */
 .conteudo {
     width: 1140px;
     margin-inline: auto;
 }
 
-/* ========== SEÇÕES: espaçamento padrão entre os blocos da página ========== */
+/* SEÇÕES */
 .secao {
     padding: 96px 0;
 }
 
 
-/* ========== INTRODUÇÃO DAS SEÇÕES: título + texto curto ========== */
 .intro-secao {
     max-width: 640px;
     margin-bottom: 48px;
@@ -95,7 +91,7 @@ a {
 }
 
 
-/* ========== NAVBAR (cabeçalho fixo no topo) ========== */
+/* NAVBAR */
 .cabecalho {
     background: #3A0F1B;
     border-bottom: 1px solid #C9A227;
@@ -121,7 +117,6 @@ a {
     white-space: nowrap;
 }
 
-/* ========== NAVBAR: links do menu ========== */
 .menu {
     display: flex;
     align-items: center;
@@ -152,7 +147,6 @@ a {
 }
 
 
-/* NAVBAR */
 .cabecalho .title {
     font-family: "Jost", "Segoe UI", Arial, sans-serif;
     font-weight: 700;
@@ -201,9 +195,6 @@ a {
     color: #fff;
     background: #3A0F1B;
 }
-
-
-
 
 .banner-conteudo {
     max-width: 820px;
@@ -260,6 +251,10 @@ a {
         transform: translateY(0);
     }
 }
+
+
+
+
 
 
 /* BOTÕES */
@@ -331,71 +326,12 @@ a {
     color: #6E5C61;
 }
 
-/* ========== GARRAFAS: vitrine dos vinhos (Início e Produtos) ========== */
-.garrafas {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
-    gap: 48px 32px;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-
-.garrafa {
-    text-align: center;
-}
-
-.garrafa .vitrine {
-    display: grid;
-    place-items: center;
-    height: 300px;
-    margin-bottom: 20px;
-    background: #F1E7E6;
-    border-bottom: 1px solid #C9A227;
-}
-
-.garrafa .vitrine img {
-    height: 240px;
-    transition: transform .35s ease;
-}
-
-.garrafa:hover .vitrine img {
-    transform: translateY(-8px) rotate(-2deg);
-}
-
-.garrafa h3 {
-    font-size: 23px;
-    margin-bottom: 5px;
-}
-
-.garrafa .tipo {
-    font-size: 15px;
-    color: #6E5C61;
-    margin-bottom: 6px;
-}
-
-.garrafa .descricao {
-    font-size: 15px;
-    color: #6E5C61;
-    max-width: 250px;
-    margin-inline: auto;
-}
-
-/* ========== PREÇO dos vinhos ========== */
-.preco {
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 22px;
-    color: #3A0F1B;
-    margin: 0;
-}
-
-/* ========== LINK CENTRALIZADO abaixo das seções ========== */
 .link-centro {
     text-align: center;
     margin-top: 56px;
 }
 
-/* ========== COLUNAS: nosso diferencial (página Início) ========== */
+/* COLUNAS */
 .colunas {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -412,7 +348,6 @@ a {
 }
 
 
-/* ========== FAIXA COM FOTO: produção / vídeo (página Início) ========== */
 .faixa-foto {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -435,8 +370,6 @@ a {
     color: #fff;
 }
 
-
-/* ========== SEÇÃO ESCURA (adega): estoque, consultores e citação ========== */
 .adega {
     background: #24080F;
     color: #E3D5CF;
@@ -451,8 +384,6 @@ a {
     color: #CDBBB5;
 }
 
-
-/* ========== PASSOS NUMERADOS: sistema de estoque e atendimento ========== */
 .passos {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -488,8 +419,6 @@ a {
     color: #CDBBB5;
 }
 
-
-/* ========== CAIXA DO SISTEMA DE ESTOQUE (página Início) ========== */
 .caixa-estoque {
     display: flex;
     flex-wrap: wrap;
@@ -503,15 +432,6 @@ a {
 .caixa-estoque p {
     margin: 0;
     max-width: 560px;
-}
-
-/* ========== TECLA (ex.: F12) ========== */
-kbd {
-    font-family: inherit;
-    font-size: 15px;
-    padding: 1px 7px;
-    border: 1px solid currentColor;
-    border-radius: 3px;
 }
 
 
@@ -819,7 +739,7 @@ kbd {
 
 
 
-/* FORMULÁRIO (página Contato) */
+/* FORMULÁRIO */
 
 .formulario {
     display: grid;
