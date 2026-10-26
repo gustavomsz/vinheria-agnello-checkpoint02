@@ -801,6 +801,8 @@ a {
 table {
   width: 100%;
   border-collapse: collapse;
+  background-color: #3A0F1B;
+  color: white;
 }
 
 th, td {
@@ -810,17 +812,23 @@ th, td {
 }
 
 th {
-  background-color: #6b1e2e;
+  background-color: #3A0F1B;
   color: white;
 }
 
 .estoque-baixo {
-  background-color: #fdecea;
-  color: #c0392b;
+  background-color: #3A0F1B;
+  color: #1c0401;
 }
 
 
-
+.titulo-vinho{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: #3A0F1B;
+    color: #fafafa;
+    
+    
+}
 /*  RODAPÉ  */
 .rodape {
     background: #24080F;

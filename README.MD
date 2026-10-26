@@ -1,6 +1,7 @@
 # Vinharia Agnello
 
-**Site publicado:** https://gustavomsouza24012006-bot.github.io/vinharia-agnello/
+**Site publicado: https://gustavomsz.github.io/vinheria-agnello-checkpoint02/** 
+**Repositorio do github: https://github.com/gustavomsz/vinheria-agnello-checkpoint02.git** 
 
 
 ## Descrição do projeto
@@ -25,7 +26,7 @@ vinharia-agnello/
     │   └── Vinnho1.png
     └── js/
     │   ├── script.js
-    │   └── cadastroDePessoas.js
+    │   
     └── pages/
         ├── historia.html
         ├── produtos.html
