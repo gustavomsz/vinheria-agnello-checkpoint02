@@ -1,12 +1,129 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="description"
+        content="Vinharia Agnello: vinhos selecionados e atendimento personalizado há mais de 15 anos em São Paulo.">
+    <title>Vinharia Agnello</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Jost:wght@400;500&display=swap">
+    <link rel="stylesheet" href="src/css/style.css">
 </head>
-<body>
-</body>
+
+<body class="pagina-inicial">
+    <header class="cabecalho">
+        <div class="conteudo">
+            <a class="marca title" href="index.html">VINHARIA AGNELLO</a>
+            <nav aria-label="Menu principal">
+                <ul class="menu">
+                    <li><a href="index.html" aria-current="page">Início</a></li>
+                    <li><a href="src/pages/historia.html">História</a></li>
+                    <li><a href="src/pages/produto.html">Produtos</a></li>
+                    <li><a href="src/pages/contatos.html">Contato</a></li>
+                    <li><a href="src/pages/equipe.html">Equipe</a></li>
+                    <li><button id="btn-estoque" class="btn-estoque" type="button">Estoque</button></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="banner">
+            <div class="banner-conteudo">
+                <h1>O vinho certo para cada momento</h1>
+                <p>Nossos consultores ajudam você a fazer a escolha ideal, de acordo com o seu gosto e a sua ocasião.
+                </p>
+                <a class="botao-banner" href="src/pages/produtos.html">Ver os vinhos</a>
+            </div>
+        </section>
+
+        <section class="secao">
+            <div class="conteudo a-casa">
+                <div>
+                    <h2>Sobre nós</h2>
+                    <p class="texto-grande">Há mais de 15 anos, a Vinharia Agnello se dedica à produção de vinhos
+                        artesanais de alta qualidade em São Paulo, combinando tradição e inovação em cada garrafa.</p>
+                </div>
+                <div class="lateral">
+                    <p>Nossa paixão pela vinicultura nos leva a criar experiências únicas para nossos clientes.</p>
+                    <p>Um dos nossos principais diferenciais é o conhecimento que temos para orientar cada cliente na
+                        escolha do vinho, na loja ou pelo site.</p>
+                    <a href="src/pages/equipe.html">Conheça quem atende você</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="secao">
+            <div class="conteudo">
+                <div class="intro-secao">
+                    <h2>Nosso diferencial</h2>
+                    <p>Orientar bem é tão importante quanto escolher bem o que vai para a prateleira.</p>
+                </div>
+                <div class="colunas">
+                    <div>
+                        <h3>Uvas e regiões</h3>
+                        <p>Conhecemos as características de cada tipo de uva, região, vinícola e rótulo, além de outros
+                            detalhes importantes.</p>
+                    </div>
+                    <div>
+                        <h3>Harmonização</h3>
+                        <p>Sugerimos combinações com diferentes tipos de alimentos e refeições.</p>
+                    </div>
+                    <div>
+                        <h3>Cada ocasião</h3>
+                        <p>Indicamos os vinhos mais adequados para cada ocasião de consumo.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="faixa-foto">
+            <img src="src/img/Vinnho1.png" alt="Adega climatizada com garrafas da Vinharia Agnello">
+            <div class="texto">
+                <h2>Acompanhe um pouco da nossa produção</h2>
+                <p>A produção artesanal de vinho colonial na Serra Gaúcha, uma tradição italiana que inspira cada rótulo
+                    da nossa seleção.</p>
+                <div class="botoes">
+                    <a class="botao-claro" href="https://www.youtube.com/watch?v=ieRbMcKo-t4" target="_blank"
+                        rel="noopener">Assistir ao vídeo no YouTube</a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+
+    <footer class="rodape">
+        <div class="conteudo">
+            <div class="rodape-colunas">
+                <div>
+                    <a class="marca" href="index.html">Vinharia Agnello</a>
+                    <p>Empresa familiar de São Paulo. Há mais de 15 anos ajudando cada cliente a encontrar o vinho
+                        certo.</p>
+                </div>
+                <div>
+                    <h2>Navegue</h2>
+                    <ul>
+                        <li><a href="index.html">Início</a></li>
+                        <li><a href="src/pages/historia.html">História</a></li>
+                        <li><a href="src/pages/produto.html">Produtos</a></li>
+                        <li><a href="src/pages/contatos.html">Contato</a></li>
+                        <li><a href="src/pages/equipe.html">Equipe</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="rodape-final">
+                <p>&copy; 2026 Vinharia Agnello. Todos os direitos reservados.</p>
+                <p>Aprecie com moderação. Venda proibida para menores de 18 anos.</p>
+            </div>
+        </div>
+    </footer>
+
+
     <script src="src/js/script.js"></script>
+</body>
 
 </html>
