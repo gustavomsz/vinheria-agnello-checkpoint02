@@ -747,6 +747,7 @@ a {
     background: #fff;
     padding: 40px;
     border: 1px solid #E3D6D4;
+    box-shadow: 0 8px 24px rgba(58, 15, 27, 0.06);
 }
 
 .formulario label,
