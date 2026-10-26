@@ -85,79 +85,78 @@ function cadastroDeVinhos() {
         quantidade5 = cadastrarQuantidade();
         tipo5 = cadastrarTipo();
         break;
-        
     }
-     totalDeCadastros++;
-    let opcao = prompt("Deseja cadastrar outro vinho? (S/N)")
-    if (opcao == "S" || opcao == "s"){
-        continue;
-  }else{
-    break;
+    totalDeCadastros++;
+    let opcao = prompt("Deseja cadastrar outro vinho? (S/N)");
+    if (opcao == "S" || opcao == "s") {
+      continue;
+    } else {
+      break;
+    }
   }
-}
 }
 function estoqueBaixo(quantidade) {
   return quantidade < limiteEstoqueBaixo;
 }
-function mostrarVinhos(){
+function mostrarVinhos() {
+  console.log("Total de vinhos cadastrados: " + totalDeCadastros);
 
-    console.log("Total de vinhos cadastrados: " + totalDeCadastros);
+  if (totalDeCadastros >= 1) {
+    console.log("Vinho 1:");
+    console.log("Nome: " + nome1);
+    console.log("Tipo: " + tipo1);
+    console.log("Safra: " + safra1);
+    console.log("Quantidade: " + quantidade1);
+    console.log("Idade da safra: " + idadeSafra);
+  }
 
-    if (totalDeCadastros >= 1) {
-        console.log("Vinho 1:");
-        console.log("Nome: " + nome1);
-        console.log("Tipo: " + tipo1);
-        console.log("Safra: " + safra1);
-        console.log("Quantidade: " + quantidade1);
-    }
+  if (totalDeCadastros >= 2) {
+    console.log("Vinho 2:");
+    console.log("Nome: " + nome2);
+    console.log("Tipo: " + tipo2);
+    console.log("Safra: " + safra2);
+    console.log("Quantidade: " + quantidade2);
+    console.log("Idade da safra: " + idadeSafra);
+  }
 
-    if (totalDeCadastros >= 2) {
-        console.log("Vinho 2:");
-        console.log("Nome: " + nome2);
-        console.log("Tipo: " + tipo2);
-        console.log("Safra: " + safra2);
-        console.log("Quantidade: " + quantidade2);
-    }
+  if (totalDeCadastros >= 3) {
+    console.log("Vinho 3:");
+    console.log("Nome: " + nome3);
+    console.log("Tipo: " + tipo3);
+    console.log("Safra: " + safra3);
+    console.log("Quantidade: " + quantidade3);
+    console.log("Idade da safra: " + idadeSafra);
+  }
 
-    if (totalDeCadastros >= 3) {
-        console.log("Vinho 3:");
-        console.log("Nome: " + nome3);
-        console.log("Tipo: " + tipo3);
-        console.log("Safra: " + safra3);
-        console.log("Quantidade: " + quantidade3);
-    }
+  if (totalDeCadastros >= 4) {
+    console.log("Vinho 4:");
+    console.log("Nome: " + nome4);
+    console.log("Tipo: " + tipo4);
+    console.log("Safra: " + safra4);
+    console.log("Quantidade: " + quantidade4);
+    console.log("Idade da safra: " + idadeSafra);
+  }
 
-    if (totalDeCadastros >= 4) {
-        console.log("Vinho 4:");
-        console.log("Nome: " + nome4);
-        console.log("Tipo: " + tipo4);
-        console.log("Safra: " + safra4);
-        console.log("Quantidade: " + quantidade4);
-    }
+  if (totalDeCadastros >= 5) {
+    console.log("Vinho 5:");
+    console.log("Nome: " + nome5);
+    console.log("Tipo: " + tipo5);
+    console.log("Safra: " + safra5);
+    console.log("Quantidade: " + quantidade5);
+    console.log("Idade da safra: " + idadeSafra);
 
-    if (totalDeCadastros >= 5) {
-        console.log("Vinho 5:");
-        console.log("Nome: " + nome5);
-        console.log("Tipo: " + tipo5);
-        console.log("Safra: " + safra5);
-        console.log("Quantidade: " + quantidade5);
-    }
-
+  }
 }
-function idadeVinho(Safra){
-    let idadeSafra = anoAtual - Safra
+function idadeVinho(Safra) {
+  let idadeSafra = anoAtual - Safra;
 
-    if (idadeSafra <= 30){
-        alert("Safra antiga")
-    }
-    else if(idadeSafra >= 50){
-        alert("Safra moderna")
-    }
-    else{
-        alert("Safra muito nova")
-    }
+  if (idadeSafra <= 30) {
+    alert("Safra antiga");
+  } else if (idadeSafra >= 50) {
+    alert("Safra moderna");
+  } else {
+    alert("Safra muito nova");
+  }
 }
-
 cadastroDeVinhos();
 mostrarVinhos();
-
