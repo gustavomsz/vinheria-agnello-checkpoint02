@@ -185,6 +185,22 @@ a {
     background: #E0BC48;
 }
 
+.menu a.btn-estoque {
+    font: inherit;
+    font-size: 15px;
+    color: #3A0F1B;
+    background: #C9A227;
+    border: none;
+    padding: 8px 18px;
+    cursor: pointer;
+    transition: background .2s;
+}
+
+.menu a.btn-estoque:hover {
+    color: #3A0F1B;
+    background: #E0BC48;
+}
+
 
 /* BANNER */
 .banner {
