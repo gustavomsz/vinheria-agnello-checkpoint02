@@ -87,7 +87,7 @@ function verificarVinho(nome, safra, quantidade) {
 
 function cadastroDeVinhos() {
   for (let i = 1; i <= cadastroMaximo; i++) {
-    switch (i) {
+    switch (i) {           //switch case para cadastrar os vinhos de acordo com o número de cadastros
       case 1:
         nome1 = cadastrarNome();
         safra1 = cadastrarSafra();
