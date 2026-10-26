@@ -798,7 +798,26 @@ a {
 }
 
 
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
 
+th, td {
+  border: 1px solid #ccc;
+  padding: 8px;
+  text-align: left;
+}
+
+th {
+  background-color: #6b1e2e;
+  color: white;
+}
+
+.estoque-baixo {
+  background-color: #fdecea;
+  color: #c0392b;
+}
 
 
 

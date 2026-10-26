@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Estoque da Vinharia Agnello" />
+    <title>História | Vinharia Agnello</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Jost:wght@400;500&display=swap"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+
+  <body>
+    <header class="cabecalho">
+      <div class="conteudo">
+        <a class="marca title" href="../../index.html">VINHARIA AGNELLO</a>
+        <nav aria-label="Menu principal">
+          <ul class="menu">
+            <li><a href="../../index.html">Início</a></li>
+            <li><a href="historia.html">História</a></li>
+            <li><a href="produtos.html">Produtos</a></li>
+            <li><a href="contatos.html">Contato</a></li>
+            <li><a href="equipe.html">Equipe</a></li>
+            <li>
+              <button id="btn-estoque" class="btn-estoque" type="button">
+                Estoque
+              </button>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+
+        <h2>Vinhos cadastrados</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Nome</th>
+                    <th>Tipo</th>
+                    <th>Safra</th>
+                    <th>Idade</th>
+                    <th>Classificação</th>
+                    <th>Quantidade</th>
+                    <th>Estoque baixo</th>
+                </tr>
+            </thead>
+            <tbody id="corpoTabela"></tbody>
+        </table>
+        
+    </main>
+   
+    <footer class="rodape">
+      <div class="conteudo">
+        <div class="rodape-colunas">
+          <div>
+            <a class="marca" href="../../index.html">Vinharia Agnello</a>
+            <p>
+              Empresa familiar de São Paulo. Há mais de 15 anos ajudando cada
+              cliente a encontrar o vinho certo.
+            </p>
+          </div>
+          <div>
+            <h2>Navegue</h2>
+            <ul>
+              <li><a href="../../index.html">Início</a></li>
+              <li><a href="historia.html">História</a></li>
+              <li><a href="produtos.html">Produtos</a></li>
+              <li><a href="contatos.html">Contato</a></li>
+              <li><a href="equipe.html">Equipe</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="rodape-final">
+          <p>&copy; 2026 Vinharia Agnello. Todos os direitos reservados.</p>
+          <p>Aprecie com moderação. Venda proibida para menores de 18 anos.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="../js/script.js"></script>
+  </body>
+</html>

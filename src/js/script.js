@@ -178,6 +178,27 @@ function mostrarVinho(numero, nome, tipo, safra, quantidade) {
   } else {
     console.log("Estoque baixo: não");
   }
+  adicionarVinhoNaTabelaDeEstoque(numero, nome, tipo, safra, quantidade);
+}
+
+function adicionarVinhoNaTabelaDeEstoque(numero, nome, tipo, safra, quantidade) {
+  let corpoTabela = document.getElementById("corpoTabela");
+  let linha = document.createElement("tr");
+
+  if(estoqueBaixo(quantidade)){
+    linha.classList.add("estoque-baixo"); 
+  }
+linha.innerHTML =
+    "<td>" + numero + "</td>" +
+    "<td>" + nome + "</td>" +
+    "<td>" + tipo + "</td>" +
+    "<td>" + safra + "</td>" +
+    "<td>" + idadeVinho(safra) + " anos </td>" +
+    "<td>" + classificarVinho(safra) + "</td>" +
+    "<td>" + quantidade + "</td>" +
+    "<td>" + (estoqueBaixo(quantidade) ? "SIM" : "Não") + "</td>";
+
+  corpoTabela.appendChild(linha);
 }
 function mostrarVinhos() {
   console.log("Total de vinhos cadastrados: " + totalDeCadastros);
@@ -212,7 +233,6 @@ function mostrarVinhos() {
   );
 
   alert(
-    "Dados exibidos no console!\n\n" +
       "Cadastros feitos: " +
       totalDeCadastros +
       "\n" +
