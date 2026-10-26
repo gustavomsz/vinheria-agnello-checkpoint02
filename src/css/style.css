@@ -818,8 +818,8 @@ th {
 }
 
 .estoque-baixo {
-  background-color: #3A0F1B;
-  color: #1c0401;
+  background-color: #310000;
+  color: hsl(0, 0%, 100%);
 }
 
 
